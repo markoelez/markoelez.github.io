@@ -12,7 +12,7 @@
             font-family: 'Roboto Mono', sans-serif;
             background-color: #1d1e26;
             color: #c9cacc;
-            line-height: 1.6;
+            line-height: 1.2;
             padding: 20px;
             margin: 0;
             display: flex;
@@ -44,15 +44,38 @@
             margin-top: 30px;
             margin-bottom: 30px;
             text-align: left;
+            font-size: 0.8em;
         }
-        .post {
+        .projects {
             margin-top: 30px;
             margin-bottom: 30px;
             text-align: left;
+            font-size: 0.8em;
         }
-        .post-title {
+        .section-title {
             color: #4FFA7B;
             font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .projects-list {
+            font-size: 1.0em;
+        }
+        .experience-list {
+            font-size: 1.0em;
+            padding-left: 0;
+        }
+        .experience-list > li {
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+        .experience-list > li > strong {
+            color: #4FFA7B;
+        }
+        .experience-sublist {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .experience-sublist li {
             margin-bottom: 5px;
         }
         .footer {
@@ -78,20 +101,58 @@
     <div class="container">
         <h1>Marko Elez</h1>
         <div class="experience">
-            <strong><div class="post-title"># Experience </div></strong>
-            <ul>
-                <li><strong>X</strong> - Search AI </li>
-                <li><strong>SpaceX</strong> - Starlink Satellite Software </li>
-                <li><strong>SpaceX</strong> - Starship Software </li>
-                <li><strong>SpaceX</strong> - Vehicle Telemetry Software </li>
-                <li><strong>Amazon</strong> - Route Planning</li>
-                <li><strong>Unimetrics</strong> - Founder and CTO</li>
-                <li><strong>Rutgers Cyber Physical Systems Lab</strong> - Computer Vision Research Assistant</li>
+            <strong><div class="section-title"># Experience </div></strong>
+            <ul class="experience-list">
+                <li>
+                    <strong>𝕏</strong> (Search AI)
+                    <ul class="experience-sublist">
+                        <li>... current role ...</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>SpaceX</strong> (Starlink Satellite Software)
+                    <ul class="experience-sublist">
+                        <li>OTA (satellite, gateway, wifi-router, user-terminal) software update</li>
+                        <li>Hardware fleet management</li>
+                        <li>Satellite collision avoidance</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>SpaceX</strong> - Starship Software
+                    <ul class="experience-sublist">
+                        <li>Manufacturing software (MES, ERP, inventory management, etc.)</li>
+                        <li>Infrastructure (build/deploy tooling, etc.)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>SpaceX</strong> - Vehicle Telemetry Software
+                    <ul class="experience-sublist">
+                        <li>Distributed telemetry ingestion and storage</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Amazon</strong> - Route Planning
+                    <ul class="experience-sublist">
+                        <li>Region-specific algo optimizations and versioning</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Unimetrics</strong> - Founder and CTO
+                    <ul class="experience-sublist">
+                        <li>Wrote all of the software (realtime messaging, collaborative document editing, payments, etc.)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Rutgers Cyber Physical Systems Lab</strong> - Computer Vision Research Assistant
+                    <ul class="experience-sublist">
+                        <li>SLAM for mapping/localization in aquatic environments without GPS</li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <div class="post">
-            <strong><div class="post-title"># Projects </div></strong>
-            <ul>
+        <div class="projects">
+            <strong><div class="section-title"># Some Projects </div></strong>
+            <ul class="projects-list">
                 <li><strong><a href="https://github.com/markoelez/minigrad">minigrad</a></strong></li>
                 <li><strong><a href="https://github.com/markoelez/minicompiler">minicompiler</a></strong></li>
                 <li><strong><a href="https://github.com/markoelez/minislam">minislam</a></strong></li>
@@ -103,7 +164,7 @@
         </div>
         <div class="divider"></div>
         <div class="footer">
-            <a href="https://github.com/markoelez">GitHub️</a> | <a href="https://x.com/marko_elez">𝕏</a> | <a href="https://www.instagram.com/markoelez7">Instagram</a> | <a href="https://www.linkedin.com/in/markoelez/">LinkedIn</a>
+            <a href="https://github.com/markoelez">GitHub️</a> | <a href="mailto:markoelez7@gmail.com">Email</a> | <a href="https://x.com/marko_elez">𝕏</a> | <a href="https://www.instagram.com/markoelez7">Instagram</a> | <a href="https://www.linkedin.com/in/markoelez/">LinkedIn</a>
         </div>
     </div>
 </body>
